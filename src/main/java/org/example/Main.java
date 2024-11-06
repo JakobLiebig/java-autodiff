@@ -9,10 +9,12 @@ public class Main {
 
         Node result = (a.add(b)).multiply(a.add(b));
 
-        System.out.println(a.getValue() + " + " + b.getValue());
-        System.out.println(" = " + result.getValue());
+        System.out.println("a := " + a.getValue());
+        System.out.println("b := " + b.getValue());
+        System.out.println("r = (a + b) ** 2 = " + result.getValue());
 
         result.calculateGradients();
+        System.out.println("drda = " + a.getGradient());
         System.out.println("drdb = " + b.getGradient());
     }
 }

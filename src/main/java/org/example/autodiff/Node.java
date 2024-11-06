@@ -6,7 +6,7 @@ import org.example.autodiff.branches.Multiply;
 import org.example.autodiff.branches.Add;
 
 public class Node {
-    private double value;
+    private final double value;
     private double gradient;
 
     private Branch branch;
